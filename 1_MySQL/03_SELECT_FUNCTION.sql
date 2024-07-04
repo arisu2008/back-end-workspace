@@ -198,7 +198,7 @@ SELECT
     timestampdiff(day, hire_date, now()) "근무 일 수",
     timestampdiff(month, hire_date, now()) "근무 개월 수",
     timestampdiff(year, hire_date, now()) "근무 년 수"
-FROM employee;
+FROM employee;
 
 /*
 	ADDDATE(날짜, INTERVAL 숫자 날짜단위)
