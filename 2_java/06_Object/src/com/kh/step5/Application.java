@@ -30,6 +30,7 @@ public class Application {
 	    					+ book2.getPrice() + "원, 할인된 가격은 " + discount + "원");
 	    System.out.println(book1.getTitle() + "의 원래 가격은 " 
 				+ book1.getPrice() + "원, 할인된 가격은 " + discount2 + "원");
+	    
 	}
 
 }
