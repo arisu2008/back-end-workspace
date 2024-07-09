@@ -1,0 +1,9 @@
+package com.kr.variable;
+
+public class D_Scanner {
+
+	public static void main(String[] args) {
+
+	}
+
+}
