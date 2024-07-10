@@ -1,6 +1,7 @@
 package com.kh.example.practice1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Vector;
@@ -10,37 +11,39 @@ public class Application {
 	
 	public void method1() {
 			
-		List<Integer> list = new ArrayList<Integer>();
-		List<Integer> lotto = new ArrayList<Integer>();
-		Vector v = new Vector();
-		Vector v2 = new Vector();
-		v.add(4);
-		v.add(28);
-		v.add(35);
-		v.add(39);
-		v.add(44);
-		v.add(45);
+		ArrayList<Integer> lotto = new ArrayList<Integer>();
 		
-		v2.add(35);
-		v2.add(39);
-		v2.add(30);
-		v2.add(18);
-		v2.add(20);
-		v2.add(4);
-System.out.println(v);		
-		for(int i = 1; i <= 45; i++) {
-			list.add(i);
-		}
 		for(int i = 1; i <= 6; i++) {
-			lotto.add(list.get(i));
-		} if(v == lotto ) {
-			
-		} else if (v2 == lotto) {
-			
+		int num = (int) (Math.random() * 45 + 1);
+		if(!lotto.contains(num)) {
+			lotto.add(num);
 		}
-	System.out.println(lotto);
-	}
 		
+		int count = 0;
+		
+		while(true) {
+			
+			ArrayList<Integer> myLotto = new ArrayList<Integer>();
+			
+			while(myLotto.size() < 6) {
+				int num = (int) (Math.random() * 45 +1);
+				if(!myLotto.contains(num)) {
+					myLotto.add(num);
+				}
+			}
+		}
+		
+		System.out.println("로또 번호 : " + lotto);
+		System.out.println("내 번호 : " + myLotto);
+		
+		Collections.sort(lotto);
+		Collections.sort(myLotto);
+
+		if(lotto.equals(myLotto)) {
+			break;
+		}
+		}
+	}
 	
 	public static void main(String[] args) {
 		

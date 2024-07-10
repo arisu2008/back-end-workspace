@@ -7,9 +7,14 @@ public class Member {
 	private int coupon;
 	private int bookList;
 	private String title;
+	private String BookTitle;
 	
-	
-	
+	public String getBookTitle() {
+		return BookTitle;
+	}
+	public void setBookTitle(String BookTitle) {
+		this.BookTitle = BookTitle;
+	}
 	
 	public String getName() {
 		return name;
