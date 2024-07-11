@@ -8,9 +8,13 @@ import com.kh.array.practice3.Application;
 
 public class Application {
 
-	private Scanner sc = new Scanner(System.in);
-	private MemberController mc = new MemberController();
-	private Member viewMember = new Member();
+	Scanner sc = new Scanner(System.in);
+	Member member = new Member();
+	Book[] books = {new Book("밥을 지어요", true, 0),
+					Book("오늘은 아무래도 덮밥", true, 0),
+					Book("원피스 108", true, 0),
+					Book("귀멸의 칼날 23", true, 0)
+	}
 	private int bookList;
 
 	public static void main(String[] args) {
@@ -20,18 +24,28 @@ public class Application {
 	}
 	
 	public void mainMenu() {
-				boolean check = true;
-				while(check) {
-					System.out.println("1. 마이페이지 ");
-					System.out.println("2. 도서 대여하기 ");
-					System.out.println("3. 프로그램 종료하기 ");
-					System.out.println("메뉴 번호 :  ");
-					
-					if( < 2) {
-						
-					} else {
-						
-					}
+		System.out.println("이름 : ");
+		String name = sc.nextLine();
+		
+		System.out.println("나이 : ");
+		member.setName(name);
+		int age = Integer.parseInt(sc.nextLine());
+		member.setAge(age);
+		
+		while(true) {
+		System.out.println("=====메뉴=====");
+		System.out.println("1. 마이페이지 ");
+		System.out.println("2. 도서 대여하기 ");
+		System.out.println("3. 프로그램 종료하기 ");
+		System.out.println("메뉴 번호 :  ");
+		int number = Integer.parseInt(sc.nextLine());
+		System.out.println(member);
+	}
+				if(number == 1) {
+					System.out.println(member);
+				} else if(number == 2) {
+					System.out.println("1번 도서 : Book [title");
+				}
 				
 				int select = Integer.parseInt(sc.nextLine());
 					switch(select) {
