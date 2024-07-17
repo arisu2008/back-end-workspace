@@ -1,6 +1,7 @@
 package com.kh.example.practice2.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.kh.example.practice2.model.Music;
 
@@ -13,16 +14,22 @@ public class MusicController {
 		}
 	}
 	
-	private void addFirstList() {
-		
+	private boolean  addFirstList(Music music) {
+		if(!music.getArtist().equals("")&& !music.getSong().equals("")){
+		list.add(0, music);
+		return true;
+		}
+		return false;
 	}
 
-	private void printAll() {
-		
+	public  printAll() {
+		return list;
 	}
 	
-	private void searchMusic() {
-		
+	private void searchMusic(String song) {
+		for(Music music : list) {
+			if(music.getSong().)
+		}
 	}
 	
 	private void removeMusic() {
@@ -33,11 +40,29 @@ public class MusicController {
 		
 	}
 	
-	private void descArtist() {
-		
+	public ArrayList<Music> descArtist() {
+		ArrayList<Music> cloneList = (ArrayList<Music>) list.clone();
+		Collections.sort(cloneList, new ArtistDescending());
+		return cloneList;
 	}
 	
-	private void ascSong() {
-	
+	public ArrayList<Music> ascSong() {
+		ArrayList<Music> cloneList = (ArrayList<Music>) list.clone();
+		Collections.sort(cloneList, new SongAscending());
+		return cloneList;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

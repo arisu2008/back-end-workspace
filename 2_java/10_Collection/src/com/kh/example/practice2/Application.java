@@ -3,6 +3,7 @@ package com.kh.example.practice2;
 import java.util.Scanner;
 
 import com.kh.example.practice2.controller.MusicController;
+import com.kh.example.practice2.model.Music;
 
 public class Application {
 	
@@ -115,15 +116,17 @@ System.out.println("이영지 - Small girl의 값이 변경되었습니다.");
 }	
 public void descArtist() {
 	System.out.println("****** 가수 명 내림차순 정렬******");
-System.out.println("이영지 - Small girl");
-System.out.println("aespa - Supernova");
-System.out.println("NewJeans - How Sweet");
+	for(Music music : mc.descArtist()) {
+		System.out.println(music);
+	}
 }
 public void ascSong() {
 	System.out.println("****** 곡명 오름차순 정렬******");
-System.out.println("NewJeans - How Sweet");
-System.out.println("이영지 - Small girl");
-System.out.println("aespa - Supernova");
-}}
+	for(Music music : mc.descArtist()) {
+		System.out.println(music);
+		}
+	}
+}
+
 	
 	
