@@ -1,0 +1,12 @@
+package com.kh.model.dao;
+
+import java.sql.DriverManager;
+
+public class EmployeeDAO {
+	Class.forName("com.mysql.cj/jdbc.Driveer");
+}
+
+public Connection getConnect() {
+	return DriverManager.getConnection("jdbc:mysql://localhost:3306/kh", "root", "qwer1234");
+	
+}
