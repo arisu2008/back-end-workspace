@@ -115,7 +115,9 @@ public class ConditionPractice {
         }
         
         System.out.println(result);
+        
     }
+        
 
     /*
         국어, 영어, 수학 세 과목의 점수를 입력 받고 합계와 평균을 계산하고 합계와 평균을 이용하여 합격 / 불합격 처리하는 기능을 구현하세요.
@@ -180,6 +182,7 @@ public class ConditionPractice {
     	
     	DecimalFormat df = new DecimalFormat("###,###");
     	System.out.println(df.format(price));
+    	
     }
 
 
