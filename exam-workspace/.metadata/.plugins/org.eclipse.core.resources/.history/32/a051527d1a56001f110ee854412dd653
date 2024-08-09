@@ -1,0 +1,13 @@
+package com.kh.tesasdf;
+
+
+import java.util.Scanner;
+
+public class tesetser {
+	Scanner sc = new Scanner(System.in);
+	
+	
+	
+	
+	}
+

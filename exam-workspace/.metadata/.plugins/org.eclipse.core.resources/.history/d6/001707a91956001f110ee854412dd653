@@ -1,0 +1,14 @@
+package com.kh.tesasdf;
+
+
+import java.util.Scanner;
+
+public class tesetser {
+	Scanner sc = Scanner(System.in);
+	while(true) {
+		
+		int number = Integer.parseInt(sc.nextLine);
+	} if 
+	
+	
+}

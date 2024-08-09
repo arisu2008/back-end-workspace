@@ -1,0 +1,43 @@
+package com.kh.tesasdf;
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.kh.test5.moder.Food;
+
+public class tesetser {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	ArrayList<Food> list = new ArrayList<>();
+	
+	while(true) {
+		int number = Integer.parseInt(sc.nextLine());
+		
+		while(true) {
+			
+			
+		 if(number == 1) {
+			System.out.println("추가할음식 : ");
+			String name = sc.nextLine();
+			System.out.println("칼로리 입력 : ");
+			int kcal = Integer.parseInt(name, kcal);
+			System.out.println("음식 정보 추가 완료");
+		} else if (number == 2) {
+			for(Food food : list) {
+				System.out.println(food);
+			}
+		}else if (number == 3) {
+			
+		}else if (number == 4) {
+			
+		}
+	}
+	
+		}
+	
+	}
+}
+	
+	

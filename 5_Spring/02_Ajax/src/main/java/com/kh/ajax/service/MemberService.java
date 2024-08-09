@@ -9,11 +9,20 @@ import mapper.MemberMapper;
 
 @Service
 public class MemberService {
-	
+
 	@Autowired
 	private MemberMapper mapper;
 	
 	public Member idCheck(String id) {
 		return mapper.idCheck(id);
 	}
+	public void register(Member vo) {
+		mapper.register(vo);
+	}
 }
+
+
+
+
+
+

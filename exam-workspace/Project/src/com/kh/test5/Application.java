@@ -19,7 +19,7 @@ public class Application {
 			System.out.println("3. 음식 삭제 ");
 			System.out.println("4. 프로그램 종료");
 			System.out.println("번호 선택 : ");
-			
+		
 			int number = Integer.parseInt(sc.nextLine());
 			
 			if(number == 1) {
@@ -47,3 +47,22 @@ public class Application {
 		}	
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
